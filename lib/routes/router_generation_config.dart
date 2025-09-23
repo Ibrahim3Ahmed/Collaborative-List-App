@@ -1,6 +1,10 @@
 import 'package:colist_project/screens/authentication_screens/register_screen.dart';
 import 'package:colist_project/screens/authentication_screens/welcome_screen.dart';
 import 'package:colist_project/screens/home_screen.dart';
+import 'package:colist_project/screens/tabs/archieve/archieve.dart';
+import 'package:colist_project/screens/tabs/home/home.dart';
+import 'package:colist_project/screens/tabs/notications/notifications.dart';
+import 'package:colist_project/screens/tabs/settings/settings.dart';
 import 'package:go_router/go_router.dart';
 
 import '../screens/authentication_screens/CreateNewPasswordScreen.dart';
@@ -35,6 +39,22 @@ class RouterGenerationConfig {
             path: AppRoutes.homeScreen,
             name: AppRoutes.homeScreen,
             builder: (context, state) => const HomeScreen()),
+        GoRoute(
+            path: AppRoutes.home,
+            name: AppRoutes.home,
+            builder: (context, state) => const Home()),
+        GoRoute(
+            path: AppRoutes.settings,
+            name: AppRoutes.settings,
+            builder: (context, state) => const Settings()),
+        GoRoute(
+            path: AppRoutes.notification,
+            name: AppRoutes.notification,
+            builder: (context, state) => const Notifications()),
+        GoRoute(
+            path: AppRoutes.archieve,
+            name: AppRoutes.archieve,
+            builder: (context, state) => const Archieve()),
 
 
 
