@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> tabs = [
+    List<Widget> tabs =  const[
       Home(),
       Notifications(),
       Archieve(),
